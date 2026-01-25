@@ -39,7 +39,7 @@ $query = 'INSERT INTO currency_rate_cbrf VALUES (now(), ?, ?, ?)';
 try {
     $stmt = $pdo->prepare($query);
     $stmt->execute([$currency_rate[0], $currency_rate[1], $currency_rate[2]]);
-    echo 'Данные успешно добавленны в базу данных'; 
+    echo 'Данные успешно добавленны в базу данных' . PHP_EOL; 
 } catch (PDOException $e) {
     echo 'Добавление данных не удалось по причине: ' . $e->getMessage() . '</br>';
 }
