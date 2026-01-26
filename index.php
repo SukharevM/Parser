@@ -6,7 +6,9 @@ require_once 'decimal_type.php';
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\HttpClient\HttpClient;
 
-$html = file_get_contents('https://cbr.ru/');
+$client = HttpClient::create();
+$response = $client->request('GET', 'https://cbr.ru/');
+$html = $response->getContent();
 $crawler = new Crawler($html);
 
 /* Извлекаем значения */
@@ -32,6 +34,7 @@ for ($i = 0; $i < count($currency_rate); $i++) {
     $currency_rate[$i] = get_decimal($currency_rate[$i]);
     echo $currency[$i] . ': ' . $currency_rate[$i] . '</br>';
 }
+
 /* Сохраняем данные в базу данных */
 
 $query = 'INSERT INTO currency_rate_cbrf VALUES (now(), ?, ?, ?)';
