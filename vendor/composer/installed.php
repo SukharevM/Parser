@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '439d1dbc0f9f89c41ec4b4e85fac2e7a81f5c80f',
+        'reference' => '61de55a22c5f48e4ad31747d3f9981c3a06e8c29',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '439d1dbc0f9f89c41ec4b4e85fac2e7a81f5c80f',
+            'reference' => '61de55a22c5f48e4ad31747d3f9981c3a06e8c29',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -114,15 +114,6 @@
             'install_path' => __DIR__ . '/../symfony/browser-kit',
             'aliases' => array(),
             'dev_requirement' => true,
-        ),
-        'symfony/css-selector' => array(
-            'pretty_version' => 'v8.0.0',
-            'version' => '8.0.0.0',
-            'reference' => '6225bd458c53ecdee056214cb4a2ffaf58bd592b',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/css-selector',
-            'aliases' => array(),
-            'dev_requirement' => false,
         ),
         'symfony/dependency-injection' => array(
             'pretty_version' => 'v8.0.5',

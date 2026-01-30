@@ -1,8 +1,7 @@
 {
     "require": {
         "symfony/dom-crawler": "^8.0",
-        "symfony/http-client": "^8.0",
-        "symfony/css-selector": "^8.0"
+        "symfony/http-client": "^8.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^4.0",
