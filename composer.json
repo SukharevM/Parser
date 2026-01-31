@@ -5,6 +5,7 @@
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^4.0",
-        "symfony/panther": "^2.4"
+        "symfony/panther": "^2.4",
+        "dbrekelmans/bdi": "^1.4"
     }
 }
